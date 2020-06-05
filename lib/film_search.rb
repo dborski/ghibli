@@ -8,9 +8,15 @@ class FilmSearch
     end
   end
 
-  def people_infomration
+  def people_information
     service.people.map do |data|
       Person.new(data)
+    end
+  end
+
+  def location_information
+    service.locations.map do |data|
+      Location.new(data)
     end
   end
   

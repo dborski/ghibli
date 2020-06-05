@@ -1,6 +1,6 @@
 require_relative 'collection'
 
-class FilmCollection < Collection
+class LocationCollection < Collection
 
   @@all = []
 
@@ -8,6 +8,6 @@ class FilmCollection < Collection
   end
 
   def self.all
-    @@all = Collection.film_info
+    @@all = Collection.location_info
   end 
 end
